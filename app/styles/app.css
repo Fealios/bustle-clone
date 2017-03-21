@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+body{
+  background-color: #F7F7F7;
+}
+
 .content {
   margin-top: 100px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.row {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+img {
+  width: 460px;
+  height: 275px;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 50px;
+}
+
+.by {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: normal !important;
+}
+.author {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+}
+
+h4 {
+  margin-top: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  display: block;
+  height: 82px;
+  font-size: 15px;
+  font-weight: normal;
+  /*white-space:nowrap;*/
+  overflow: hidden;
+  /*text-overflow: ellipsis;*/
+}
+
+.navbar-default {
+    background-color: rgba(255,255,255,0.9)!important;
+    border-color: #e7e7e7;
 }

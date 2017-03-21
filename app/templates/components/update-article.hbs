@@ -4,22 +4,22 @@
     <form>
       <div class="form-group">
         <label for="title">Title</label>
-        {{input value=title id="title"}}
+        {{input value=article.title id="title"}}
       </div>
 
       <div class="form-group">
         <label for="author">Author</label>
-        {{input value=author id="author"}}
+        {{input value=article.author id="author"}}
       </div>
 
       <div class="form-group">
         <label for="image_url">Image Url</label>
-        {{input value=image_url id="image_url"}}
+        {{input value=article.image_url id="image_url"}}
       </div>
 
       <div class="form-group">
         <label for="text">Text</label>
-        {{input value=text id="text"}}
+        {{input value=article.text id="text"}}
       </div>
 
       <button {{action 'update' article}}>Save</button>

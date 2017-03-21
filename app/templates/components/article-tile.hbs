@@ -1,7 +1,15 @@
-<li>{{#link-to 'article' article.id}}{{article.title}}{{/link-to}}
-    <h5>{{article.author}}</h5>
-    <img src={{article.image_url}} />
-    <p>
-      {{article.text}}
-    </p>
+<li>
+  <div class="row">
+    <div class="col-md-6">
+
+      {{#link-to 'article' article.id}}<img src={{article.image_url}} />{{/link-to}}
+    </div>
+    <div class="col-md-6">
+      <h2>{{#link-to 'article' article.id}}{{article.title}}{{/link-to}}</h2>
+        <h4 class="article-text">
+          {{article.text}}
+        </h4>
+      <p class="by">By <span class="author">{{article.author}}</span></p>
+    </div>
+  </div>
 </li>
