@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'bustle-clone',
+    // # This will differ depending on what you named YOUR app.
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -10,11 +11,14 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
       }
+    },
+
+    firebase: {
+      apiKey: "AIzaSyAiDuhlxe8pvlSvhffTyineZbaL0HAQMSU",
+      authDomain: "bustle-54cb7.firebaseapp.com",
+      databaseURL: "https://bustle-54cb7.firebaseio.com",
+      storageBucket: "bustle-54cb7.appspot.com"
     },
 
     APP: {
