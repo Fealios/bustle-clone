@@ -14,7 +14,14 @@ export default Ember.Component.extend({
         text: this.get('text')
       };
       this.set('updateArticleForm', false);
-      this.sendAction('update', article, params);
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          article.set(key,params[key]);
+        }
+      });
+      article.save();
+      // this.sendAction('update', article, params);
+      // this.transitionTo('administrator');
     }
   }
 });
