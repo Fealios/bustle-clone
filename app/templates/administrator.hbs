@@ -1,0 +1,9 @@
+<ul>
+  {{#each model as |article|}}
+    <li>
+      {{article.title}}
+      <button {{action 'destroyArticle' article}}> Delete </button>
+    </li>
+    {{/each}}
+    {{new-article saveArticle="saveArticle"}}
+</ul>
