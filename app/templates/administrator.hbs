@@ -1,9 +1,10 @@
 <ul>
   {{#each model as |article|}}
     <li>
-      {{article.title}}
-      <button {{action 'destroyArticle' article}}> Delete </button>
+      <h2>{{#link-to 'article' article.id}}{{article.title}}{{/link-to}}</h2>
+      <button {{action 'destroyArticle' article}} class='btn btn-warning'> Delete </button>
     </li>
     {{/each}}
+    <hr>
     {{new-article saveArticle="saveArticle"}}
 </ul>

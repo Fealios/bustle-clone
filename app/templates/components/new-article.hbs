@@ -22,9 +22,9 @@
         {{input value=text id="text"}}
       </div>
 
-      <button {{action 'saveArticle'}}>Save</button>
+      <button {{action 'saveArticle'}} class="btn btn-default">Save</button>
     </form>
   </div>
     {{else}}
-    <button {{action 'articleFormShow'}}>Add new article</button>
+    <button {{action 'articleFormShow'}} class="btn btn-default">Add new article</button>
   {{/if}}
